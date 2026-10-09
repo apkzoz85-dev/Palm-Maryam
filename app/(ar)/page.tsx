@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Palm Gardens at PX",
     locale: ar.seo.ogLocale,
     type: "website",
-    images: [{ url: "/images/hero.jpg", width: 2000, height: 1236, alt: "Palm Gardens at PX" }],
+    images: [{ url: "/images/render-4.jpg", width: 1600, height: 1298, alt: "Palm Gardens at PX" }],
   },
   twitter: { card: "summary_large_image", title: ar.seo.title, description: ar.seo.description },
 };

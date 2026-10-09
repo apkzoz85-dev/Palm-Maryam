@@ -19,6 +19,7 @@ export type Dict = {
     phase: string;
     units: string;
     payment: string;
+    masterplan: string;
     gallery: string;
     register: string;
     switchLabel: string;
@@ -73,6 +74,8 @@ export type Dict = {
   masterplan: {
     title: string;
     text: string;
+    caption: string;
+    alt: string;
   };
   gallery: {
     title: string;
@@ -149,7 +152,8 @@ export const ar: Dict = {
     phase: "المرحلة الثانية",
     units: "الوحدات والأسعار",
     payment: "خطة السداد",
-    gallery: "تطور التنفيذ",
+    masterplan: "المخطط العام",
+    gallery: "تصورات المشروع",
     register: "سجّل اهتمامك",
     switchLabel: "English",
     switchHref: "/en",
@@ -205,7 +209,7 @@ export const ar: Dict = {
   pyramid: {
     title: "عيشة بإطلالة على الأهرامات",
     text: "لما المرحلة تكون من أعلى مناطق بالم هيلز، الإطلالة مش مجرد ديكور. الأهرامات قدامك من أجزاء كبيرة من المشروع، والمساحة اللي حواليك تفضل مفتوحة ومريحة.",
-    alt: "إطلالة على الأهرامات من بالم هيلز PX",
+    alt: "تصور معماري لمباني Palm Gardens at PX",
   },
   phase: {
     title: "المرحلة الثانية: Palm Gardens بمساحة 36 فدان",
@@ -256,16 +260,20 @@ export const ar: Dict = {
     ],
   },
   masterplan: {
-    title: "مخطط عمراني بيجمع الخضرة والحياة",
-    text: "PX بيستهدف الجيل الأصغر بشكل خاص، بمزيج من السكن والترفيه والمرافق اللي بتخلي الحياة اليومية أسهل وأممتع.",
+    title: "المخطط العام: مراحل PX والمرحلة الثانية",
+    caption: "المخطط العام لمشروع PX (29-01-2025)، والمرحلة الثانية Palm Gardens موضحة على الخريطة",
+    alt: "المخطط العام لمشروع PX بالم هيلز يوضح المرحلة الثانية Palm Gardens",
+    text: "المخطط مقسّم لثلاث مراحل. المرحلة الثانية Palm Gardens في منتصف الخريطة، ومعها مناطق الخدمات والتجاري على الأطراف، والحدود الحمراء بتوضح نطاق المشروع كله.",
   },
   gallery: {
-    title: "تطور التنفيذ على أرض المشروع",
-    intro: "صور حقيقية من موقع التنفيذ بتوضح تقدم الأعمال في المرحلة.",
+    title: "تصورات معمارية للمشروع",
+    intro: "تصورات معمارية للتاون هاوس والفيلات والواجهات. للتوضيح فقط، والتفاصيل النهائية حسب التنفيذ.",
     items: [
-      { src: "/images/progress-1.jpg", alt: "أعمال تنفيذ مشروع Palm Gardens at PX بالم هيلز", caption: "أعمال التنفيذ بالموقع" },
-      { src: "/images/progress-2.jpg", alt: "هياكل الفيلات في مشروع بالم هيلز PX", caption: "هياكل الفيلات" },
-      { src: "/images/progress-3.jpg", alt: "تاون هاوس قيد التنفيذ في بالم هيلز PX", caption: "التاون هاوس قيد التنفيذ" },
+      { src: "/images/render-4.jpg", alt: "تصور معماري لواجهة مباني Palm Gardens at PX بالم هيلز", caption: "تصور معماري: واجهة مسائية" },
+      { src: "/images/render-6.jpg", alt: "تصور معماري لمدخل مبنى في Palm Gardens at PX", caption: "تصور معماري: المدخل والحديقة" },
+      { src: "/images/render-5.jpg", alt: "تصور معماري لمباني Palm Gardens at PX في النهار", caption: "تصور معماري: واجهة نهارية" },
+      { src: "/images/render-3.jpg", alt: "تصور معماري لتاون هاوس بالم هيلز PX", caption: "تصور معماري: التاون هاوس" },
+      { src: "/images/render-2.jpg", alt: "تصور معماري لفيلات بالم هيلز PX", caption: "تصور معماري: الفيلات" },
     ],
   },
   form: {
@@ -294,7 +302,7 @@ export const ar: Dict = {
       "الأسعار والمساحات والمواصفات المعروضة استرشادية وتقريبية، وقد تتغير دون إشعار مسبق. الصفحة دي للتسويق والتعريف بالمشروع، ولا تعتبر عرضًا ملزمًا.",
     agent:
       "Grandeur Spaces وكيل بيع معتمد لمشروعات Palm Hills. المعلومات المذكورة مبنية على المواد التسويقية المتاحة وقت النشر.",
-    general: "الصور المستخدمة توضح مراحل التنفيذ والإطلالات، وليست بالضرورة تمثل الوحدات النهائية.",
+    general: "الصور تصورات معمارية (Renders) للتوضيح فقط، والمخطط العام مبدئي وقد يتغير.",
   },
   privacy: {
     summary: "سياسة الخصوصية",
@@ -362,7 +370,8 @@ export const en: Dict = {
     phase: "Phase 2",
     units: "Units & Prices",
     payment: "Payment Plan",
-    gallery: "Construction",
+    masterplan: "Masterplan",
+    gallery: "Project Views",
     register: "Register Interest",
     switchLabel: "العربية",
     switchHref: "/",
@@ -418,7 +427,7 @@ export const en: Dict = {
   pyramid: {
     title: "Living with pyramid views",
     text: "When a phase sits on one of the highest points in Palm Hills, the view is not just decoration. The Pyramids are in sight from large parts of the project, and the open space around your home stays open.",
-    alt: "Pyramid views from Palm Hills PX",
+    alt: "Architectural rendering of Palm Gardens at PX",
   },
   phase: {
     title: "Phase 2: Palm Gardens on 36 acres",
@@ -469,16 +478,20 @@ export const en: Dict = {
     ],
   },
   masterplan: {
-    title: "A masterplan that blends greenery and living",
-    text: "PX is aimed especially at the younger generation, with a mix of homes, entertainment and amenities that make everyday life easier and more enjoyable.",
+    title: "Masterplan: PX phases and Phase 2",
+    caption: "PX Masterplan (29-01-2025), with Phase 2 Palm Gardens marked on the map",
+    alt: "PX Palm Hills masterplan showing Phase 2, Palm Gardens",
+    text: "The masterplan is divided into three phases. Phase 2, Palm Gardens, sits in the centre of the map, with services and commercial zones on the edges. The red outline marks the full project boundary.",
   },
   gallery: {
-    title: "Construction progress on site",
-    intro: "Real photos from the site showing progress on the phase.",
+    title: "Architectural views of the project",
+    intro: "Architectural renders of the townhouses, villas and facades. For illustration only; final details depend on construction.",
     items: [
-      { src: "/images/progress-1.jpg", alt: "Construction works at Palm Gardens at PX, Palm Hills", caption: "Works on site" },
-      { src: "/images/progress-2.jpg", alt: "Villa structures at Palm Hills PX", caption: "Villa structures" },
-      { src: "/images/progress-3.jpg", alt: "Townhouses under construction at Palm Hills PX", caption: "Townhouses under construction" },
+      { src: "/images/render-4.jpg", alt: "Architectural rendering of Palm Gardens at PX facades, Palm Hills", caption: "Rendering: evening facade" },
+      { src: "/images/render-6.jpg", alt: "Architectural rendering of a building entrance at Palm Gardens at PX", caption: "Rendering: entrance and gardens" },
+      { src: "/images/render-5.jpg", alt: "Daytime architectural rendering of Palm Gardens at PX", caption: "Rendering: daytime facade" },
+      { src: "/images/render-3.jpg", alt: "Architectural rendering of Palm Hills PX townhouses", caption: "Rendering: townhouses" },
+      { src: "/images/render-2.jpg", alt: "Architectural rendering of Palm Hills PX villas", caption: "Rendering: villas" },
     ],
   },
   form: {
@@ -507,7 +520,7 @@ export const en: Dict = {
       "Prices, areas and specifications shown are indicative and approximate, and may change without prior notice. This page is for marketing and project information and does not constitute a binding offer.",
     agent:
       "Grandeur Spaces is an authorized sales agent for Palm Hills projects. Information is based on marketing material available at the time of publishing.",
-    general: "Photos illustrate construction progress and views and do not necessarily represent final units.",
+    general: "Images are architectural renders for illustration only. The masterplan is preliminary and may change.",
   },
   privacy: {
     summary: "Privacy policy",

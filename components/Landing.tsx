@@ -59,6 +59,7 @@ export default function Landing({ d, path }: { d: Dict; path: string }) {
           <nav className="hidden items-center gap-6 text-sm font-medium text-ink/80 lg:flex">
             <a href="#highlights" className="hover:text-clay">{d.nav.highlights}</a>
             <a href="#phase" className="hover:text-clay">{d.nav.phase}</a>
+            <a href="#masterplan" className="hover:text-clay">{d.nav.masterplan}</a>
             <a href="#units" className="hover:text-clay">{d.nav.units}</a>
             <a href="#payment" className="hover:text-clay">{d.nav.payment}</a>
             <a href="#gallery" className="hover:text-clay">{d.nav.gallery}</a>
@@ -82,8 +83,8 @@ export default function Landing({ d, path }: { d: Dict; path: string }) {
         {/* ========== Hero ========== */}
         <section className="relative isolate overflow-hidden text-white">
           <img
-            src="/images/hero.jpg"
-            alt={isAr ? "غروب فوق مشروع Palm Gardens at PX بالم هيلز" : "Sunset over Palm Gardens at PX, Palm Hills"}
+            src="/images/render-4.jpg"
+            alt={isAr ? "تصور معماري لمشروع Palm Gardens at PX بالم هيلز" : "Architectural rendering of Palm Gardens at PX, Palm Hills"}
             className="absolute inset-0 -z-10 h-full w-full object-cover"
             fetchPriority="high"
           />
@@ -160,7 +161,7 @@ export default function Landing({ d, path }: { d: Dict; path: string }) {
               </a>
             </div>
             <div className="order-1 overflow-hidden rounded-[2rem] shadow-2xl shadow-ink/20 lg:order-2">
-              <img src="/images/pyramid-1.jpg" alt={d.pyramid.alt} loading="lazy" className="aspect-[4/5] w-full object-cover" />
+              <img src="/images/render-5.jpg" alt={d.pyramid.alt} loading="lazy" className="aspect-[4/5] w-full object-cover" />
             </div>
           </div>
         </section>
@@ -204,6 +205,17 @@ export default function Landing({ d, path }: { d: Dict; path: string }) {
               </div>
             </aside>
           </div>
+        </section>
+
+        {/* ========== Masterplan ========== */}
+        <section id="masterplan" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+          <Eyebrow>{d.nav.masterplan}</Eyebrow>
+          <SectionTitle>{d.masterplan.title}</SectionTitle>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">{d.masterplan.text}</p>
+          <figure className="mt-12 overflow-hidden rounded-[2rem] bg-white p-3 shadow-xl shadow-ink/5 ring-1 ring-line">
+            <img src="/images/masterplan.jpg" alt={d.masterplan.alt} loading="lazy" className="w-full rounded-2xl" />
+            <figcaption className="px-3 pb-2 pt-4 text-sm text-muted">{d.masterplan.caption}</figcaption>
+          </figure>
         </section>
 
         {/* ========== Units & prices ========== */}
